@@ -1,0 +1,8 @@
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\bin\Debug\Chante.exe.config
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\bin\Debug\Chante.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\bin\Debug\Chante.pdb
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.Properties.Resources.resources
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.csproj.GenerateResource.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.csproj.CoreCompileInputs.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.pdb

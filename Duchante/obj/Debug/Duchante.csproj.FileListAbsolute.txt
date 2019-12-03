@@ -1,0 +1,7 @@
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\bin\Debug\Duchante.exe.config
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\bin\Debug\Duchante.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\bin\Debug\Duchante.pdb
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\obj\Debug\Duchante.csprojAssemblyReference.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\obj\Debug\Duchante.csproj.CoreCompileInputs.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\obj\Debug\Duchante.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Duchante\obj\Debug\Duchante.pdb

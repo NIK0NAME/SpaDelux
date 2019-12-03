@@ -1,0 +1,10 @@
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\bin\Debug\UnSpaDelux.exe.config
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\bin\Debug\UnSpaDelux.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\bin\Debug\UnSpaDelux.pdb
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.csprojAssemblyReference.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.Form1.resources
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.Properties.Resources.resources
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.csproj.GenerateResource.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.csproj.CoreCompileInputs.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\UnSpaDelux\obj\Debug\UnSpaDelux.pdb
