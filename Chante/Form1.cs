@@ -24,6 +24,7 @@ namespace Chante
         int timeo = 0;
 
         public Semaphore semaphor;
+        public Mutex mutexUsuario;
         public Form1()
         {
 
@@ -38,6 +39,8 @@ namespace Chante
             PostMessage((IntPtr)0Xffff, MSG_ENTRA, IntPtr.Zero, IntPtr.Zero);
 
             semaphor = Semaphore.OpenExisting("spa delux");
+            mutexUsuario = Mutex.OpenExisting("mutex spa");
+
             semaphor.WaitOne();
 
             do
@@ -48,6 +51,7 @@ namespace Chante
 
             semaphor.Release();
             semaphor.Close();
+            PostMessage((IntPtr)0Xffff, MSG_DUCHA_OUT, IntPtr.Zero, IntPtr.Zero);
         }
     }
 }
