@@ -49,6 +49,7 @@ namespace UnSpaDelux
             {
                 usersNum++;
                 txtUsuarios.Text = usersNum.ToString();
+                
                 /*textBox1.Lines = log.ToArray();
                 txtCuantos.Text = (int.Parse(txtCuantos.Text) - 1).ToString();*/
             }
@@ -62,6 +63,7 @@ namespace UnSpaDelux
             }
             else if (m.Msg == MSG_DUCHA_IN)
             {
+                panelDucha.Visible = true;
                 checkOcupado.Checked = true;
             }
             else if (m.Msg == MSG_DUCHA_OUT)
@@ -69,6 +71,7 @@ namespace UnSpaDelux
                 usersNum--;
                 txtUsuarios.Text = usersNum.ToString();
                 checkOcupado.Checked = false;
+                panelDucha.Visible = false;
             }
             else base.WndProc(ref m);
         }
@@ -93,7 +96,7 @@ namespace UnSpaDelux
             Process p = new Process();
             p.StartInfo.FileName = "..\\..\\..\\Chante\\bin\\Debug\\Chante.exe";
             //p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            p.StartInfo.CreateNoWindow = true;
+            //p.StartInfo.CreateNoWindow = true;
             p.Start();
         }
     }

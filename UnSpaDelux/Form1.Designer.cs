@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listaToallas = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuarios = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.checkOcupado = new System.Windows.Forms.CheckBox();
+            this.panelDucha = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // listaToallas
@@ -90,11 +92,23 @@
             this.checkOcupado.Text = "Ocupado";
             this.checkOcupado.UseVisualStyleBackColor = true;
             // 
+            // panelDucha
+            // 
+            this.panelDucha.BackColor = System.Drawing.Color.Transparent;
+            this.panelDucha.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDucha.BackgroundImage")));
+            this.panelDucha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDucha.Location = new System.Drawing.Point(199, 67);
+            this.panelDucha.Name = "panelDucha";
+            this.panelDucha.Size = new System.Drawing.Size(48, 41);
+            this.panelDucha.TabIndex = 7;
+            this.panelDucha.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 321);
+            this.ClientSize = new System.Drawing.Size(259, 321);
+            this.Controls.Add(this.panelDucha);
             this.Controls.Add(this.checkOcupado);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtUsuarios);
@@ -117,6 +131,7 @@
         private System.Windows.Forms.TextBox txtUsuarios;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkOcupado;
+        private System.Windows.Forms.Panel panelDucha;
     }
 }
 
