@@ -47,6 +47,18 @@ namespace Chante
             /*  Obtenemos la ventana para lanzar el mensaje*/
             IntPtr h = Process.GetProcessesByName("UnSpaDelux")[0].MainWindowHandle;
 
+            /*  Comprueba que no estan limpiando*/
+            Boolean result;
+            /*  Creamos el mutex de limpieza*/
+            Mutex mutexLimpieza;
+            do
+            {
+                mutexLimpieza = new Mutex(false, "mutexLimpieza", out result);
+                mutexLimpieza.Dispose();
+            } while (!result);
+
+            mutexLimpieza = new Mutex(false, "mutexDuchante", out result);
+
             /*  Mandamos mensaje Entra en el spa un usuario*/
             PostMessage(h, MSG_ENTRA, IntPtr.Zero, IntPtr.Zero);
 
@@ -88,6 +100,7 @@ namespace Chante
             /*  Mandamos mensaje Usuario deja la toalla*/
             PostMessage(h, MSG_DEJA_TOALLA, IntPtr.Zero, IntPtr.Zero);
 
+            mutexLimpieza.Dispose();
             //Console.ReadLine();
             Dispose();
         }

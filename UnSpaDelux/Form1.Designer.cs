@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.checkOcupado = new System.Windows.Forms.CheckBox();
             this.panelDucha = new System.Windows.Forms.Panel();
+            this.btnClean = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listaToallas
@@ -103,11 +104,22 @@
             this.panelDucha.TabIndex = 7;
             this.panelDucha.Visible = false;
             // 
+            // btnClean
+            // 
+            this.btnClean.Location = new System.Drawing.Point(199, 262);
+            this.btnClean.Name = "btnClean";
+            this.btnClean.Size = new System.Drawing.Size(48, 23);
+            this.btnClean.TabIndex = 8;
+            this.btnClean.Text = "Cls";
+            this.btnClean.UseVisualStyleBackColor = true;
+            this.btnClean.Click += new System.EventHandler(this.BtnClean_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(259, 321);
+            this.Controls.Add(this.btnClean);
             this.Controls.Add(this.panelDucha);
             this.Controls.Add(this.checkOcupado);
             this.Controls.Add(this.button1);
@@ -132,6 +144,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkOcupado;
         private System.Windows.Forms.Panel panelDucha;
+        private System.Windows.Forms.Button btnClean;
     }
 }
 

@@ -43,6 +43,15 @@ namespace UnSpaDelux
             listaToallas.Items.Add("Toalla");
         }
 
+        private void BtnClean_Click(object sender, EventArgs e)
+        {
+            Process p = new Process();
+            p.StartInfo.FileName = "..\\..\\..\\Limpieza\\bin\\Debug\\Limpieza.exe";
+            //p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //p.StartInfo.CreateNoWindow = true;
+            p.Start();
+        }
+
         protected override void WndProc(ref Message m)
         {
             if (m.Msg == MSG_ENTRA)

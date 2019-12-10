@@ -1,0 +1,7 @@
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\bin\Debug\Limpieza.exe.config
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\bin\Debug\Limpieza.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\bin\Debug\Limpieza.pdb
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\obj\Debug\Limpieza.csprojAssemblyReference.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\obj\Debug\Limpieza.csproj.CoreCompileInputs.cache
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\obj\Debug\Limpieza.exe
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Limpieza\obj\Debug\Limpieza.pdb
