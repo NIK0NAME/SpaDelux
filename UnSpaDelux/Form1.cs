@@ -27,6 +27,7 @@ namespace UnSpaDelux
 
         public int usersNum;
         public Semaphore semaphor;
+        public Mutex mutexUsuario;
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +38,9 @@ namespace UnSpaDelux
             MSG_DUCHA_IN = RegisterWindowMessage("MSG_DUCHA_IN");
             MSG_DUCHA_OUT = RegisterWindowMessage("MSG_DUCHA_OUT");
 
+            listaToallas.Items.Add("Toalla");
+            listaToallas.Items.Add("Toalla");
+            listaToallas.Items.Add("Toalla");
         }
 
         protected override void WndProc(ref Message m)
@@ -50,18 +54,21 @@ namespace UnSpaDelux
             }
             else if (m.Msg == MSG_COGE_TOALLA)
             {
-                
-            }else if(m.Msg == MSG_DEJA_TOALLA)
+                listaToallas.Items.RemoveAt(0);
+            }
+            else if(m.Msg == MSG_DEJA_TOALLA)
             {
-
+                listaToallas.Items.Add("Toalla");
             }
             else if (m.Msg == MSG_DUCHA_IN)
             {
-
+                checkOcupado.Checked = true;
             }
             else if (m.Msg == MSG_DUCHA_OUT)
             {
                 usersNum--;
+                txtUsuarios.Text = usersNum.ToString();
+                checkOcupado.Checked = false;
             }
             else base.WndProc(ref m);
         }
@@ -70,7 +77,10 @@ namespace UnSpaDelux
         private void Form1_Load(object sender, EventArgs e)
         {
             semaphor = new Semaphore(3, 3, "spa delux");
-            
+
+            mutexUsuario = new Mutex(false, "mutex spa");
+
+
         }
 
         private void BtnEntrar_Click(object sender, EventArgs e)

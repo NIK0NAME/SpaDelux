@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Chante
 {
@@ -30,28 +31,64 @@ namespace Chante
 
             InitializeComponent();
 
+            /*  Registramos los mensajes*/
             MSG_ENTRA = RegisterWindowMessage("MSG_ENTRA");
             MSG_COGE_TOALLA = RegisterWindowMessage("MSG_COGE_TOALLA");
             MSG_DEJA_TOALLA = RegisterWindowMessage("MSG_DEJA_TOALLA");
             MSG_DUCHA_IN = RegisterWindowMessage("MSG_DUCHA_IN");
             MSG_DUCHA_OUT = RegisterWindowMessage("MSG_DUCHA_OUT");
 
-            PostMessage((IntPtr)0Xffff, MSG_ENTRA, IntPtr.Zero, IntPtr.Zero);
+            
 
+            /*  Inicializamos el mutex y el semaforo*/
             semaphor = Semaphore.OpenExisting("spa delux");
             mutexUsuario = Mutex.OpenExisting("mutex spa");
 
+            /*  Obtenemos la ventana para lanzar el mensaje*/
+            IntPtr h = Process.GetProcessesByName("UnSpaDelux")[0].MainWindowHandle;
+
+            /*  Mandamos mensaje Entra en el spa un usuario*/
+            PostMessage(h, MSG_ENTRA, IntPtr.Zero, IntPtr.Zero);
+
+            /*  Espera a que este vacio el proceso para coger una toalla*/
             semaphor.WaitOne();
 
+            /*  Mandamos mensaje Usuario coge toalla*/
+            PostMessage(h, MSG_COGE_TOALLA, IntPtr.Zero, IntPtr.Zero);
+
+            /*  Entra en la ducha y la bloquea*/
+            mutexUsuario.WaitOne();
+
+            /*  Mandamos mensaje Usuario entra ducha*/
+            PostMessage(h, MSG_DUCHA_IN, IntPtr.Zero, IntPtr.Zero);
+
+            /*  Una vez el usuario entra en la ducha el tiempo que esta dentro*/
+
+            /*  Momento en el que entramos*/
+            int actual = DateTime.Now.Millisecond;
+            int quiere = new Random(actual).Next(5000, 45000);
             do
             {
                 Console.WriteLine("Tro lo lo lololo lolo trolololo");
-                timeo++;
-            } while (timeo % 1400 != 0);
+            } while ((DateTime.Now.Millisecond - actual) < 15000 && (DateTime.Now.Millisecond - actual) < quiere);
 
+            Console.Clear();
+            Console.WriteLine("Fin de ducha");
+
+            /*  Liberamos la ducha*/
+            mutexUsuario.ReleaseMutex();
+
+            /*  Mandamos mensaje Usuario sale ducha*/
+            PostMessage(h, MSG_DUCHA_OUT, IntPtr.Zero, IntPtr.Zero);
+
+            /*  Dejamos la toalla libre*/
             semaphor.Release();
             semaphor.Close();
-            PostMessage((IntPtr)0Xffff, MSG_DUCHA_OUT, IntPtr.Zero, IntPtr.Zero);
+
+            /*  Mandamos mensaje Usuario deja la toalla*/
+            PostMessage(h, MSG_DEJA_TOALLA, IntPtr.Zero, IntPtr.Zero);
+
+            //Console.ReadLine();
         }
     }
 }

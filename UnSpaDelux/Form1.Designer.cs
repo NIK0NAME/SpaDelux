@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuarios = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkOcupado = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // listaToallas
@@ -80,22 +80,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // checkBox1
+            // checkOcupado
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(71, 291);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(70, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Ocupado";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkOcupado.AutoSize = true;
+            this.checkOcupado.Location = new System.Drawing.Point(71, 291);
+            this.checkOcupado.Name = "checkOcupado";
+            this.checkOcupado.Size = new System.Drawing.Size(70, 17);
+            this.checkOcupado.TabIndex = 6;
+            this.checkOcupado.Text = "Ocupado";
+            this.checkOcupado.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(261, 321);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkOcupado);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtUsuarios);
             this.Controls.Add(this.label2);
@@ -116,7 +116,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsuarios;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkOcupado;
     }
 }
 

@@ -6,3 +6,4 @@ D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\
 D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.csproj.CoreCompileInputs.cache
 D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.exe
 D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.pdb
+D:\Nikolay_Zabaleta\5.PROG_SERVICIOS_PROCESOS\Actividades\UnSpaDelux\Chante\obj\Debug\Chante.csprojAssemblyReference.cache
