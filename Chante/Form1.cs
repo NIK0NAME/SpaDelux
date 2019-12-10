@@ -66,11 +66,12 @@ namespace Chante
 
             /*  Momento en el que entramos*/
             int actual = DateTime.Now.Millisecond;
-            int quiere = new Random(actual).Next(5000, 45000);
+            int quiere = new Random(actual).Next(1000, 4500);
             do
             {
-                Console.WriteLine("Tro lo lo lololo lolo trolololo");
-            } while ((DateTime.Now.Millisecond - actual) < 15000 && (DateTime.Now.Millisecond - actual) < quiere);
+                timeo++;
+                Console.Write("Tro lo lo lololo lolo trolololo");
+            } while (timeo % 45000 != 0/*(DateTime.Now.Millisecond - actual) < 1500*/);
 
             Console.Clear();
             Console.WriteLine("Fin de ducha");
@@ -83,12 +84,12 @@ namespace Chante
 
             /*  Dejamos la toalla libre*/
             semaphor.Release();
-            semaphor.Close();
 
             /*  Mandamos mensaje Usuario deja la toalla*/
             PostMessage(h, MSG_DEJA_TOALLA, IntPtr.Zero, IntPtr.Zero);
 
             //Console.ReadLine();
+            Dispose();
         }
     }
 }
